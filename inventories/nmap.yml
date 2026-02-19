@@ -2,5 +2,6 @@
 plugin: community.general.nmap
 strict: false
 ipv4: true
+sudo: true
 ports: false
 address: 172.16.2.0/24
