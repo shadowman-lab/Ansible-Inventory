@@ -5,6 +5,8 @@ ipv6: false
 strict: false
 open: true
 port: 22, 443, 5985, 5986
+compose:
+  ansible_host: ip
 groups:
   ssh: "(ports | selectattr('port', 'equalto', '22') |  map(attribute='state') | first) == 'open'"
   web: "(ports | selectattr('port', 'equalto', '443') |  map(attribute='state') | first) == 'open'"
