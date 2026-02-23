@@ -3,6 +3,7 @@ plugin: community.general.nmap
 address: 172.16.0-5.*
 ipv6: false
 strict: false
+open: true
 port: 22, 443, 5985, 5986
 groups:
   ssh: "(ports | selectattr('port', 'equalto', '22') |  map(attribute='state') | first) == 'open'"
