@@ -3,4 +3,9 @@ plugin: community.general.nmap
 address: 172.16.0-5.*
 ipv6: false
 strict: false
-ports: false
+port: 22, 443, 5985, 5986
+groups:
+  ssh: "(ports | selectattr('port', 'equalto', '22') |  map(attribute='state') | first) == 'open'"
+  web: "(ports | selectattr('port', 'equalto', '443') |  map(attribute='state') | first) == 'open'"
+  winrmhttp: "(ports | selectattr('port', 'equalto', '5985') |  map(attribute='state') | first) == 'open'"
+  winrmhttps: "(ports | selectattr('port', 'equalto', '5986') |  map(attribute='state') | first) == 'open'"
