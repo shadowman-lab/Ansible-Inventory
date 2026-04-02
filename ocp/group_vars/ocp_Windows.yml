@@ -1,0 +1,8 @@
+---
+ansible_become_method: runas
+ansible_become_password: '{{ windowspassword }}'
+ansible_become_user: '{{ windowsuser }}'
+ansible_password: '{{ windowspassword }}'
+ansible_pipelining: true
+ansible_shell_type: powershell
+ansible_user: '{{ windowsuser }}'
