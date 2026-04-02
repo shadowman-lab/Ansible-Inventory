@@ -4,3 +4,5 @@ include *.code-workspace
 recursive-exclude .git *
 recursive-include collections *.yml
 recursive-include inventories *
+include ocp/group_vars/ocp_Windows.yml
+include ocp/ocp.ini
