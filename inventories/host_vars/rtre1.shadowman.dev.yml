@@ -1,4 +1,5 @@
 ---
+ansible_host: arista.shadowman.dev
 ansible_port: 8080
 gigabit1: 192.16.8.190
 gigabit2: 192.16.7.190
