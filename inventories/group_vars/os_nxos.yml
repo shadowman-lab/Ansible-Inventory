@@ -4,5 +4,3 @@ ansible_connection: ansible.netcommon.network_cli
 ansible_network_os: cisco.nxos.nxos
 ansible_password: '{{ nxospassword }}'
 ansible_user: '{{ nxosuser }}'
-ansible_connect_timeout: 90
-ansible_command_timeout: 90
