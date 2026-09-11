@@ -1,0 +1,6 @@
+ansible_become_password: '{{ nxospassword }}'
+ansible_become_user: '{{ nxosuser }}'
+ansible_connection: ansible.netcommon.network_cli
+ansible_network_os: cisco.nxos.nxos
+ansible_password: '{{ nxospassword }}'
+ansible_user: '{{ nxosuser }}'
